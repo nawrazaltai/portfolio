@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    margin: 0;
+    font-family: Josefin Sans, sans-serif;
+    display:flex;
+    /* width: 80vw; */
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 15em;
+    height: 100vh;
+    /* background-color: rgb(5, 22, 46); */
+    background-color: rgb(8, 1, 37);
+    border-right: 1px solid white;
+    align-items: center;
+}
+
+
+figure {
+    height: 10em;
+    width: 10em;
+    border: 12px solid rgb(43, 47, 65);
+    border-radius: 50%;
+    background-image: url(/images/profile-pic.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+
+figcaption {
+    color:white;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0.2rem;
+    font-weight: 500;
+
+}
+
+.social-links {
+    width: 70%;
+    height: 3em;
+    margin-top: 0.5em;
+    display:flex;
+    color: white;
+    justify-content: space-evenly;
+}
+
+section a i {
+    color:white;
+    font-size: 2.2rem;
+    padding-top: 0.3em;
+}
+
+aside {
+    border: 1px solid white;
+    height: 55vh;
+    width: 80%;
+    font-size: 2.5rem;
+    margin-top: 1.1em;
+}
+
+/* aside a i {
+    color:white;
+    font-size: 2rem;
+    padding-top: 0.5em;
+    padding-left: 0em;
+} */
+
+
+main {
+    background-image: url(/images/background2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: end;
+    width: 100%;
+    color: white;
+}
+
+h1 {
+    color: white;
+    font-size: 4rem;
+}
