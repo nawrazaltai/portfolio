@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=League+Spartan:wght@300;400;500;600;700&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=League+Spartan:wght@300;400;500;600;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=League+Spartan:wght@300;400;500;600;700&family=Tangerine:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=League+Spartan:wght@300;400;500;600;700&family=Megrim&family=Tangerine:wght@700&display=swap');
 
 * {
     box-sizing: border-box;
 }
+
+/* html {
+    max-height: 100%;
+} */
 
 body {
     background-color: gray;
@@ -11,6 +16,7 @@ body {
     /* font-family: Josefin Sans, sans-serif; */
     font-family: League Spartan, sans-serif;
     display:flex;
+    /* height: 100vh; */
     /* width: 80vw; */
 }
 
@@ -19,7 +25,7 @@ body {
 nav {
     display: flex;
     flex-direction: column;
-    width: 15em;
+    /* width: 15em; */
     height: 100vh;
     /* background-color: rgb(5, 22, 46); */
     background-color: rgb(8, 1, 37);
@@ -47,23 +53,24 @@ figcaption {
 
 aside {
     border-top: 1px solid white;
-    height: 55vh;
+    height: auto;
     width: 80%;
     margin-top: 1.5em;
 }
 
-nav .menu-without-pic {
+/* nav .menu-without-pic {
     height: 55vh;
     width: 80%;
     border-bottom: 1px solid white;
-}
+} */
 
-.menu-without-pic ul, aside ul {
+ aside ul {
     list-style-type: none;
     padding-left: 0em;
     display:flex;
     flex-direction: column;
     align-items:start;
+    height:auto;
 }
 
 aside a {
@@ -80,7 +87,7 @@ aside a i {
     padding-bottom: 2em;
 }
 
-.menu-without-pic a {
+/* .menu-without-pic a {
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
@@ -93,7 +100,7 @@ aside a i {
     margin-top: 2em;
     padding-right: 0.8em;
     padding-bottom: 1em;
-}
+} */
 
 .nav-aboutme {
     padding-left: 0.07em;
@@ -136,7 +143,6 @@ main {
     background-position: end;
     width: 100%;
     color: white;
-
 }
 
 h2 {
@@ -165,7 +171,7 @@ p {
 
 .learn-more {
     display: block;
-    width: 11vw;
+    width: 15vw;
     border: 2px solid;
     border-radius: 5px;
     text-align: center;
@@ -181,14 +187,13 @@ p {
 
 
 .learn-more:hover {
-    box-shadow: inset 11vw 0 0 0 rgb(46, 5, 73);
+    box-shadow: inset 15vw 0 0 0 rgb(46, 5, 73);
     color: rgb(255, 255, 255);
 }
 
 
 .social-links {
     width: 10%;
-    /* height: 2em; */
     bottom: 1em;
     display: flex;
     color: white;
@@ -198,7 +203,6 @@ p {
 
 .main-content {
     display: inline-block;
-    /* border: 1px solid white; */
     margin-top: 10em;
     margin-left: 6em;
     width:40%;
@@ -209,18 +213,130 @@ p {
 
 /*---------------------------------- ABOUT PAGE START ----------------------------------------------- */
 
+
 .about-me-main {
-    border: 2px solid rgb(255, 255, 255);
-    width: 96%;
-    height: 95vh;
-    margin-left: 2vw;
-    margin-top: 3vh;
-    /* margin-right: 4vw; */
-    background:linear-gradient(rgb(13, 3, 71), rgb(26, 3, 41) 70%);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: white;
+    align-items: center;
+}
+
+.about-h1-font{
+    font-family: Megrim;
+    font-size: 2rem;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    color:white;
+    text-align: center;
+}
+ 
+nav.nav-menu {
+    height: auto;
+    width: auto;
+    border-bottom: 1px solid rgb(133, 14, 212);
+    overflow: auto;
+}
+
+nav .nav-menu ul {
+    list-style-type: none;
+    padding-left: 0em;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    
+}
+
+.nav-menu ul{
+    padding:0;
+    display:flex;
+    flex-direction: column;
+    margin:0;
+}
+
+.nav-menu ul li {
+    padding:0;
+    margin: -1em;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
 }
 
 
-/* ------------------------------------ MEDIA MOBILE --------------------------------- */
+.nav-menu a i {
+    color:white;
+    font-size: 1.5rem;
+    margin-top: 2em;
+    padding-right: 0.8em;
+    padding-bottom: 1em;
+}
+
+
+nav .active a, nav .active i{
+    color: rgb(133, 14, 212);
+    transition: all .6s ease-in-out;
+}
+
+nav .active a i {
+    color: rgb(133, 14, 212);
+}
+
+nav a:hover {
+    color:rgb(133, 14, 212);
+    transition: all .6s ease-in-out;
+}
+
+.nav-menu footer i{
+    justify-content: center;
+    margin-bottom: 0;
+    padding-bottom:0;
+}
+
+.about-me-pic {
+    border-radius: 0;
+    border-bottom: 1px solid white;
+    height: 20vh;
+    width: 100%;
+    margin: 0;
+    background-image: url(/images/profile-pic.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.about-me-text {
+    background-color: rgb(8, 11, 53);
+    border: 1px solid rgb(255, 255, 255);
+    width: auto;
+    height: auto;
+    margin: 2em;
+}
+
+.about-me-text h1 {
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.about-me-text p {
+    font-size: 1rem;
+    font-family: League Spartan, sans-serif;
+    font-weight: 400;
+    text-align: start;
+    letter-spacing: 0.1em;
+    margin-bottom:0;
+    width: 20em;
+    padding: 1.5em 1em 0.2em 1em;
+    color: rgb(255, 255, 255);
+    line-height: 1.7em;
+}
+
+
+/* ---------------------- MEDIA QUERY MOBILE (INDEX) STARTS  --------------------------------- */
 @media (max-width: 767px) {
     body {
         flex-direction: column;
@@ -228,7 +344,7 @@ p {
 
     nav {
         width: 100vw;
-        height: 70vh;
+        height: auto;
         background-color: rgb(8, 1, 37);
         border-right: none;
         border-bottom: 1px solid rgb(133, 14, 212);
@@ -236,8 +352,8 @@ p {
     }
 
     figure {
-        height: 7.5em;
-        width: 7.5em;
+        height: 7em;
+        width: 7em;
         border: 3px solid rgb(43, 47, 65);
     }
 
@@ -246,27 +362,31 @@ p {
         margin-top: 0.2rem;
     }
 
-    aside {
-        margin-top: 1.2em;
-        margin-bottom: 0;
-    }
 
     .social-links {
         position: relative;
         justify-content: center;
-        width:100vw;
     }
 
     nav section i {
         font-size: 1.7rem;
-        padding: 1.5em 0.5em 0em;
+        padding: 2em 0.5em 0em;
+        
     }
 
 
     aside {
         height: 35vh;
         margin-top: 1em;
+        padding-top: 1em;
+        display: flex;
+        justify-content: center;
     }
+
+    aside ul {
+        margin-bottom: 0;
+    }
+
 
     aside a {
         font-size: 1.2rem;
@@ -281,7 +401,6 @@ p {
 
     main {
         background-position: end;
-        /* height: 90vh; */
     }
 
     h2 {
@@ -329,4 +448,191 @@ p {
         box-shadow: inset 80vw 0 0 0 rgb(46, 5, 73);
     }
 }
-/* ------------------------------------ MEDIA MOBILE END --------------------------------- */
+/* ------------------------------------ MEDIA QUERY MOBILE (INDEX) ENDS--------------------------------- */
+
+
+/* -------------------------- MEDIA QUERY TABLET (INDEX) STARTS ----------------------- */
+
+@media (min-width: 768px) and (max-width: 1024px){
+    body {
+        height: 100%;
+    }
+    nav {
+        height: 100vh;
+    }
+
+    main {
+        height: 100vh;
+    }
+
+    .main-content {
+        border: 3px solid rgb(0, 1, 19);
+        background: linear-gradient(0.25turn, rgba(8, 1, 37, 0.993), rgba(10, 3, 43, 0.979), rgba(8, 1, 37, 0.836));
+        margin-top: 6em;
+        margin-left: 3em;
+        width:80%;
+        border-radius: 3px;
+        border-right-style: none;
+        height: auto;
+    }
+
+    a.learn-more {
+        width: 100%;
+        margin-top: 3em;
+    }
+
+    .learn-more:hover {
+        box-shadow: inset 60vw 0 0 0 rgb(46, 5, 73);
+    }
+}
+
+/* -------------------------- MEDIA QUERY TABLET (INDEX) ENDS ----------------------- */
+
+
+/* ------------------ MEDIA QUERY TABLET & DESKTOP (ABOUT ME) STARTS --------------------------- */
+@media (min-width: 768px) {
+
+
+
+    nav.nav-menu {
+        border-bottom-style: none;
+        width:auto;
+        overflow:auto;
+    }
+
+    figure.about-me-pic {
+        width: 100%;
+    }
+
+    .about-me-main {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        background-color: white;
+        /* align-items: start; */
+    }
+    
+    .about-h1-font{
+        font-family: Megrim;
+        font-size: 2rem;
+        padding-left: 0.2em;
+        padding-right: 0.2em;
+        color:white;
+        text-align: center;
+    }
+     
+    nav.nav-menu {
+        height: auto;
+        width: auto;
+        border-bottom: none;
+        overflow: auto;
+    }
+    
+    nav .nav-menu ul {
+        list-style-type: none;
+        padding-left: 0em;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        
+    }
+    
+    .nav-menu ul{
+        padding:0;
+        display:flex;
+        flex-direction: column;
+        margin:0;
+    }
+    
+    .nav-menu ul li {
+        padding:0;
+        margin: -1em;
+    }
+    
+    .nav-menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+    }
+    
+    
+    .nav-menu a i {
+        color:white;
+        font-size: 1.5rem;
+        margin-top: 2em;
+        padding-right: 0.8em;
+        padding-bottom: 1em;
+    }
+    
+    
+    nav .active a, nav .active i{
+        color: rgb(133, 14, 212);
+        transition: all .6s ease-in-out;
+    }
+    
+    nav .active a i {
+        color: rgb(133, 14, 212);
+    }
+    
+    nav a:hover {
+        color:rgb(133, 14, 212);
+        transition: all .6s ease-in-out;
+    }
+    
+    .nav-menu footer i{
+        /* display: flex; */
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 0;
+        padding-bottom:0;
+    }
+    
+    .about-me-pic {
+        border-radius: 0;
+        border-bottom: 1px solid white;
+        height: 20vh;
+        width: 100%;
+        margin: 0;
+        background-image: url(/images/profile-pic.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    
+    .about-me-text {
+        background-color: rgb(8, 11, 53);
+        border: 1px solid rgb(255, 255, 255);
+        width: 70vw;
+        height: auto;
+        margin: 2em;
+    }
+    
+    .about-me-text h1 {
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+    
+    .about-me-text p {
+        font-size: 1.4rem;
+        font-family: League Spartan, sans-serif;
+        font-weight: 400;
+        text-align: start;
+        letter-spacing: 0.1em;
+        margin-bottom:0;
+        width: auto;
+        /* padding: 1.5em 1em 0.2em 1em; */
+        color: rgb(255, 255, 255);
+        line-height: 1.7em;
+    }
+
+
+
+
+
+
+
+
+    
+/* ------------------ MEDIA QUERY TABLET (ABOUT ME) ENDS --------------------------- */
