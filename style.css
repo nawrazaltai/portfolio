@@ -4,7 +4,7 @@
 
 * {
     box-sizing: border-box;
-    
+
 }
 
 html {
@@ -239,7 +239,7 @@ p {
     color:white;
     text-align: center;
 }
- 
+
 nav.nav-menu {
     height: 100%;
     width: auto;
@@ -254,7 +254,7 @@ nav .nav-menu ul {
     flex-direction: column;
     align-items:center;
     justify-content: center;
-    
+
 }
 
 .nav-menu ul{
@@ -368,14 +368,17 @@ figure.about-me-pic {
     .contact-me-content {
         border: 1px solid white;
         margin: 2em 1em 2em 1em;
-        background: linear-gradient(45deg, black 50%, rgb(6, 3, 41) 50%);
+        /* background: linear-gradient(45deg, black 50%, rgb(6, 3, 41) 50%); */
+        background-color: rgb(8, 1, 37);
         display: flex;
         flex-direction: column;
     }
 
-
     .contact-me-text {
-
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
     }
 
     .contact-me-text h1 {
@@ -383,47 +386,92 @@ figure.about-me-pic {
         width: 100%;
         text-align: center;
         padding: 0em 0.4em 0.5em 0.4em;
+        margin-bottom: 0.5em;
     }
 
+    /* .contact-me-content p {
+    } */
 
-    .email span {
-        display: flex;
-        border: 2px solid rgb(124, 14, 168);
-        border-radius: 5px;
-        /* background-color: white; */
-        color: rgb(255, 255, 255);
-        padding-bottom: 0em;
-        width: 90%;
-        margin: 0.5em;
-        font-size: 1.1rem;
+    .contact-card {
+        border: 1px solid white;
+        height: 25vh;
+        width: 95%;
+        margin-bottom: 2em;
+        margin-top: 2em;
+        display:flex;
+        flex-direction: column;
+        /* background-color:#233e66; */
+        background: linear-gradient(-220deg, #0a0b3d, rgb(3, 68, 17));
         align-items: center;
-        height: 7vh;
     }
 
-    .location span {
-        display: flex;
-        border: 2px solid rgb(124, 14, 168);
-        border-radius: 5px;
-        /* background-color: white; */
-        color: rgb(255, 255, 255);
-        padding-bottom: 0em;
-        width: 90%;
-        margin: 0.5em;
-        font-size: 1.1rem;
-        align-items: center;
-        height: 7vh;
+    .upper-card {
+        /* border: 1px dashed red; */
+        width: 100%;
+        padding-bottom: 1em;
     }
 
-    .location span i, .email span i {
-        font-size: 1.2rem;
-        padding-top: 0em;
-        padding-right: 0.4em;
-        padding-left: 0.4em;
+    .upper-card h2 {
+        text-align: start;
+        font-size: 2.5rem;
+        margin-top: 0.3em;
+        margin-left: 0.3em;
+        margin-bottom:0;
+        letter-spacing: 0em;
+        color:rgb(209, 205, 219);
+        font-weight: 500;
     }
 
-    .test {
-        display:flex
+    .upper-card p {
+        margin:0;
+        margin-left: 4.5em;
+        margin-top: -0.2em;
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: start;
+        color: rgb(173, 166, 173);
     }
+
+    .lower-card {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:end;
+        width:100%;
+        height:100%;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        padding-left: 0.5em;
+    }
+
+    .email, .phone {
+        font-size: 1.4rem;
+        padding-bottom: 0.5em;
+        font-weight: 400;
+        color:rgb(255, 255, 255);
+    }
+
+    .adress {
+        font-size: 1.3em;
+        font-weight: 400;
+        color:rgb(255, 255, 255);
+    }
+
+    .email i, .phone i {
+        padding-right: 0.3em;
+        color:rgb(236, 229, 229);
+    }
+
+    .phone i {
+        color:rgb(0, 0, 0);
+    }
+
+    .adress i {
+        color:rgb(136, 14, 14);
+        padding-right: 0.5em;
+    }
+
+
 
 /* ---------------------------------CONTACT ME PAGE ENDS------------------------------ */
 
@@ -469,7 +517,7 @@ figure.about-me-pic {
     nav section i {
         font-size: 1.7rem;
         padding: 2em 0.5em 0em;
-        
+
     }
 
 
@@ -607,7 +655,7 @@ figure.about-me-pic {
         overflow: auto;
 
     }
-    
+
 
     .about-me-main {
         height: auto;
@@ -617,7 +665,7 @@ figure.about-me-pic {
     .about-me-text {
         height: auto;
     }
-    
+
     .about-me-text p {
         font-size: 1.4rem;
         padding: 1.5em 1em 0.2em 1em;
@@ -626,7 +674,7 @@ figure.about-me-pic {
     }
 
 }
- 
+
 @media (min-width: 1024px) {
 
     body {
@@ -653,7 +701,7 @@ figure.about-me-pic {
         width: 100%;
         background-size: cover;
     }
-    
+
     .about-me-text {
         display: flex;
         flex-direction: column;
@@ -661,6 +709,6 @@ figure.about-me-pic {
         width: 100%;
     }
 
-} 
+}
 
 /* ------------------ MEDIA QUERY TABLET (ABOUT ME) ENDS --------------------------- */
