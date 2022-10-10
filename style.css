@@ -395,41 +395,60 @@ figure.about-me-pic {
     .contact-card {
         border: 1px solid white;
         height: 25vh;
-        width: 95%;
+        width: 20.2em;
         margin-bottom: 2em;
         margin-top: 2em;
         display:flex;
         flex-direction: column;
         /* background-color:#233e66; */
-        background: linear-gradient(-220deg, #0a0b3d, rgb(3, 68, 17));
+        background: linear-gradient(60deg, #2d2c2e 60%, rgb(87, 32, 84) 5%);
         align-items: center;
+        flex-grow: 0;
     }
 
     .upper-card {
         /* border: 1px dashed red; */
         width: 100%;
         padding-bottom: 1em;
+        display:flex;
+        position: relative;
+    }
+
+    .upper-card-text {
+        display:flex;
+        flex-direction: column;
+        margin-top: 1em;
     }
 
     .upper-card h2 {
+        margin:0;
+        padding-left: 0.2em;
         text-align: start;
-        font-size: 2.5rem;
-        margin-top: 0.3em;
-        margin-left: 0.3em;
-        margin-bottom:0;
+        font-size: 1.6rem;
         letter-spacing: 0em;
-        color:rgb(209, 205, 219);
+        color:rgb(247, 246, 250);
         font-weight: 500;
+        white-space: nowrap;
     }
 
     .upper-card p {
+        padding-left: 1em;
         margin:0;
-        margin-left: 4.5em;
-        margin-top: -0.2em;
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: 400;
         text-align: start;
-        color: rgb(173, 166, 173);
+        color: rgb(214, 206, 214);
+        white-space: nowrap;
+    }
+
+    .triangle {
+        position: absolute;
+        margin-left:9em;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 69.3px 40px 0 40px;
+        border-color: #275d96 transparent transparent transparent;
     }
 
     .lower-card {
@@ -441,34 +460,47 @@ figure.about-me-pic {
         height:100%;
         margin-top: 1em;
         margin-bottom: 0.5em;
-        padding-left: 0.5em;
+        padding-left: 0.2em;
     }
 
     .email, .phone {
-        font-size: 1.4rem;
+        display:flex;
+        font-size: .9rem;
         padding-bottom: 0.5em;
         font-weight: 400;
         color:rgb(255, 255, 255);
+        align-items: center;
+        padding-left: 0.3em;
     }
 
     .adress {
-        font-size: 1.3em;
+        display:flex;
+        align-items: center;
+        font-size: .9rem;
         font-weight: 400;
         color:rgb(255, 255, 255);
+        padding-left: 0.2em;
+
     }
 
     .email i, .phone i {
         padding-right: 0.3em;
         color:rgb(236, 229, 229);
+        color: #275d96;
+        font-size: 1.4rem;
     }
 
     .phone i {
-        color:rgb(0, 0, 0);
+        color: green;
+        color:#275d96;
     }
 
     .adress i {
         color:rgb(136, 14, 14);
+        color: #275d96;
         padding-right: 0.5em;
+        font-size: 1.4em;
+        padding-left: 0.3em;
     }
 
 
