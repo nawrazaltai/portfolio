@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background-color: gray;
+    background-color: rgb(8, 1, 37);
     margin: 0;
     /* font-family: Josefin Sans, sans-serif; */
     font-family: League Spartan, sans-serif;
@@ -172,7 +172,7 @@ p {
 
 .learn-more {
     display: block;
-    width: 15vw;
+    width: 15em;
     border: 2px solid;
     border-radius: 5px;
     text-align: center;
@@ -184,6 +184,7 @@ p {
     box-shadow: inset 0 0 0 0 rgb(133, 14, 212);
     transition: ease-out .5s;
     outline:none;
+    white-space: normal;
 }
 
 
@@ -378,7 +379,7 @@ figure.about-me-pic {
         display:flex;
         align-items: center;
         flex-direction: column;
-        text-align: center;
+        text-align: start;
     }
 
     .contact-me-text h1 {
@@ -393,14 +394,13 @@ figure.about-me-pic {
     } */
 
     .contact-card {
-        border: 1px solid white;
-        height: 25vh;
+        border: 2px solid white;
+        border-radius: 3px;
         width: 20.2em;
         margin-bottom: 2em;
-        margin-top: 2em;
+        margin-top: 1em;
         display:flex;
         flex-direction: column;
-        /* background-color:#233e66; */
         background: linear-gradient(60deg, #2d2c2e 60%, rgb(87, 32, 84) 5%);
         align-items: center;
         flex-grow: 0;
@@ -443,7 +443,7 @@ figure.about-me-pic {
 
     .triangle {
         position: absolute;
-        margin-left:9em;
+        margin-left:9.35em;
         width: 0;
         height: 0;
         border-style: solid;
@@ -515,7 +515,7 @@ figure.about-me-pic {
 
 
 /* ---------------------- MEDIA QUERY MOBILE (INDEX) STARTS  --------------------------------- */
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     body {
         flex-direction: column;
     }
@@ -603,7 +603,6 @@ figure.about-me-pic {
     }
 
     .main-content {
-        /* display: inline-block; */
         border: 3px solid rgb(0, 1, 19);
         background: linear-gradient(0.25turn, rgba(8, 1, 37, 0.993), rgba(10, 3, 43, 0.979), rgba(8, 1, 37, 0.836));
         margin-top: 2em;
@@ -631,7 +630,7 @@ figure.about-me-pic {
 
 /* -------------------------- MEDIA QUERY TABLET (INDEX) STARTS ----------------------- */
 
-@media (min-width: 768px) and (max-width: 1024px){
+@media screen and (min-width: 768px) and (max-width: 1023px){
     body {
         height: 100%;
     }
@@ -668,7 +667,7 @@ figure.about-me-pic {
 
 
 /* ------------------ MEDIA QUERY TABLET & DESKTOP (ABOUT ME) STARTS --------------------------- */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
     body {
         height: 100vh;
@@ -707,7 +706,7 @@ figure.about-me-pic {
 
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 
     body {
         height: 100vh;
@@ -744,3 +743,173 @@ figure.about-me-pic {
 }
 
 /* ------------------ MEDIA QUERY TABLET (ABOUT ME) ENDS --------------------------- */
+
+
+
+/*---------------- MEDIA QUERY TABLET & DESKTOP (CONTACT ME) STARTS -------------------- */
+@media screen and (min-width: 768px) {
+
+    /* nav.nav-menu {
+        /* width: 100%; */
+        /* overflow: hidden;
+        height: 100%; 
+    } */
+    
+    
+    .contact-me-main {
+        display: flex;
+        /* width: 100%; */
+        height: auto;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .contact-me-content {
+        border: 1px solid white;
+        margin: 2em 1em 2em 1em;
+        background-color: rgb(8, 1, 37);
+        display: flex;
+        /* height: 55em; */
+        /* width: 40em; */
+    }
+
+    .contact-me-phrase {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        color: white;
+        width: 70%;
+    }
+
+
+    .contact-me-text {
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        color: white;
+    }
+
+    .contact-me-text h1 {
+        font-size: 2.5rem;
+        width: 100%;
+        text-align: center;
+        padding: 0em 0.4em 0.5em 0.4em;
+        margin-bottom: 0.5em;
+    }
+
+    /* .contact-me-content p {
+    } */
+
+    .contact-card {
+        border: 2px solid white;
+        border-radius: 3px;
+        width: 20.2em;
+        margin-bottom: 2em;
+        margin-top: 1em;
+        display:flex;
+        flex-direction: column;
+        background: linear-gradient(60deg, #2d2c2e 60%, rgb(87, 32, 84) 5%);
+        align-items: center;
+        flex-grow: 0;
+    }
+
+    .upper-card {
+        /* border: 1px dashed red; */
+        width: 100%;
+        padding-bottom: 1em;
+        display:flex;
+        position: relative;
+    }
+
+    .upper-card-text {
+        display:flex;
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    .upper-card h2 {
+        margin:0;
+        padding-left: 0.2em;
+        text-align: start;
+        font-size: 1.6rem;
+        letter-spacing: 0em;
+        color:rgb(247, 246, 250);
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    .upper-card p {
+        padding-left: 1em;
+        margin:0;
+        font-size: 0.9rem;
+        font-weight: 400;
+        text-align: start;
+        color: rgb(214, 206, 214);
+        white-space: nowrap;
+    }
+
+    .triangle {
+        position: absolute;
+        margin-left:9.35em;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 69.3px 40px 0 40px;
+        border-color: #275d96 transparent transparent transparent;
+    }
+
+    .lower-card {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:end;
+        width:100%;
+        height:100%;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        padding-left: 0.2em;
+    }
+
+    .email, .phone {
+        display:flex;
+        font-size: .9rem;
+        padding-bottom: 0.5em;
+        font-weight: 400;
+        color:rgb(255, 255, 255);
+        align-items: center;
+        padding-left: 0.3em;
+    }
+
+    .adress {
+        display:flex;
+        align-items: center;
+        font-size: .9rem;
+        font-weight: 400;
+        color:rgb(255, 255, 255);
+        padding-left: 0.2em;
+
+    }
+
+    .email i, .phone i {
+        padding-right: 0.3em;
+        color:rgb(236, 229, 229);
+        color: #275d96;
+        font-size: 1.4rem;
+    }
+
+    .phone i {
+        color: green;
+        color:#275d96;
+    }
+
+    .adress i {
+        color:rgb(136, 14, 14);
+        color: #275d96;
+        padding-right: 0.5em;
+        font-size: 1.4em;
+        padding-left: 0.3em;
+    }
+
+
+
+}
