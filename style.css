@@ -26,9 +26,8 @@ body {
 nav {
     display: flex;
     flex-direction: column;
-    /* width: 15em; */
+    /* position:fixed; */
     height: 100vh;
-    /* background-color: rgb(5, 22, 46); */
     background-color: rgb(8, 1, 37);
     border-right: 1px solid rgb(133, 14, 212);
     align-items: center;
@@ -59,20 +58,15 @@ aside {
     margin-top: 1.5em;
 }
 
-/* nav .menu-without-pic {
-    height: 55vh;
-    width: 80%;
-    border-bottom: 1px solid white;
-} */
 
  aside ul {
     list-style-type: none;
     padding-left: 0em;
     display:flex;
     flex-direction: column;
-    align-items:start;
     height:auto;
 }
+
 
 aside a {
     text-decoration: none;
@@ -88,27 +82,9 @@ aside a i {
     padding-bottom: 2em;
 }
 
-/* .menu-without-pic a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-}
 
-
-.menu-without-pic a i {
-    color:white;
-    font-size: 1.5rem;
-    margin-top: 2em;
-    padding-right: 0.8em;
-    padding-bottom: 1em;
-} */
-
-.nav-aboutme {
-    padding-left: 0.07em;
-}
-
-.nav-skills {
-    margin-left:-0.1em;
+.nav-resume a i{
+    padding-right: 1em;
 }
 
 section a i {
@@ -210,11 +186,154 @@ p {
     width:40%;
 }
 
+@media screen and (max-width: 767px) {
+    body {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100vw;
+        height: auto;
+        background-color: rgb(8, 1, 37);
+        border-right: none;
+        border-bottom: 1px solid rgb(133, 14, 212);
+        align-items: center;
+    }
+
+    figure {
+        height: 7em;
+        width: 7em;
+        border: 3px solid rgb(43, 47, 65);
+    }
+
+    figcaption {
+        font-size: 2rem;
+        margin-top: 0.2rem;
+    }
+
+    .nav-resume a i{
+        padding-right: 1.2em;
+    }
+
+    .social-links {
+        position: relative;
+        justify-content: center;
+    }
+
+    nav section i {
+        font-size: 1.7rem;
+        padding: 2em 0.5em 0em;
+
+    }
+
+    aside {
+        height: 35vh;
+        margin-top: 1em;
+        padding-top: 1em;
+        display: flex;
+        justify-content: center;
+    }
+
+    aside ul {
+        margin-bottom: 0;
+    }
+
+    aside a {
+        font-size: 1.2rem;
+    }
+
+    aside a i {
+        font-size: 1rem;
+        margin-top: 0em;
+        padding-right: 1em;
+        padding-bottom: 1.9em;
+    }
+
+    main {
+        background-position: end;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-align: start;
+        width: 100%;
+    }
+
+    h1 {
+        color: white;
+        margin-top: 1em;
+        width: 100%;
+    }
+
+    p {
+        margin-top: -0.7em;
+        font-size: 1.25em;
+        width: 70%;
+        color: rgb(255, 255, 255);
+        margin-bottom: 0.7em;
+    }
+
+    .main-content {
+        border: 3px solid rgb(0, 1, 19);
+        background: linear-gradient(0.25turn, rgba(8, 1, 37, 0.993), rgba(10, 3, 43, 0.979), rgba(8, 1, 37, 0.836));
+        margin-top: 2em;
+        margin-left: 2em;
+        width:80%;
+        border-radius: 3px;
+        border-right-style: none;
+    }
+
+    a.learn-more {
+        width: 100%;
+        padding: 0.7rem 0.5rem;
+        font-size: 1rem;
+        box-shadow: inset 0 0 0 0 rgb(133, 14, 212);
+        transition: ease-in-out 1s;
+        margin-top: 2em;
+    }
+
+    .learn-more:hover {
+        box-shadow: inset 80vw 0 0 0 rgb(46, 5, 73);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    body {
+        height: 100%;
+    }
+    nav {
+        height: 100vh;
+    }
+
+    main {
+        height: 100vh;
+    }
+
+    .main-content {
+        border: 3px solid rgb(0, 1, 19);
+        background: linear-gradient(0.25turn, rgba(8, 1, 37, 0.993), rgba(10, 3, 43, 0.979), rgba(8, 1, 37, 0.836));
+        margin-top: 6em;
+        margin-left: 3em;
+        width:80%;
+        border-radius: 3px;
+        border-right-style: none;
+        height: auto;
+    }
+
+    a.learn-more {
+        width: 100%;
+        margin-top: 3em;
+    }
+
+    .learn-more:hover {
+        box-shadow: inset 60vw 0 0 0 rgb(46, 5, 73);
+    }
+}
 /*---------------------------------- INDEX PAGE END ----------------------------------------------- */
 
 
 /*---------------------------------- ABOUT ME PAGE START ----------------------------------------------- */
-
 .about-me-main {
     display: flex;
     flex-direction: column;
@@ -355,8 +474,96 @@ figure.about-me-pic {
     color: rgba(255, 255, 255, 0.842);
     line-height: 1.7em;
 }
-/* ---------------------- ABOUT ME PAGE ENDS  --------------------------------- */
 
+@media screen and (min-width: 768px) {
+
+    body {
+        height: 100vh;
+        overflow: auto;
+    }
+
+    nav.nav-menu {
+        border-bottom-style: none;
+        width:auto;
+        /* overflow:auto; */
+        /* position: relative; */
+    }
+
+    .nav-resume a i{
+        padding-right: 1em;
+    }
+
+    .about-me-content {
+        width: 70%;
+        height:auto;
+        margin-left: 16em;
+    }
+
+    main.about-me-main {
+        overflow: auto;
+
+    }
+
+
+    .about-me-main {
+        height: auto;
+        background-color: white;
+    }
+
+    .about-me-text {
+        height: auto;
+    }
+
+    .about-me-text p {
+        font-size: 1.4rem;
+        padding: 1.5em 1em 0.2em 1em;
+        color: rgb(255, 255, 255);
+        line-height: 1.7em;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    body {
+        height: 100vh;
+    }
+
+    nav.nav-menu {
+        width:auto;
+    }
+
+    .about-me-content {
+        display:flex;
+        flex-direction: row;
+        width: auto;
+        align-items: center;
+        height:auto;
+        margin-left: 12em;
+    }
+
+    .pic-container {
+        width: 40%;
+        /* height: auto; */
+        border: 1px solid white;
+        margin: 0em 2em 0em 2em;
+    }
+
+    figure.about-me-pic {
+        height:80vh;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .about-me-text {
+        display: flex;
+        flex-direction: column;
+        margin:0;
+        width: 100%;
+    }
+
+}
+/* ---------------------- ABOUT ME PAGE ENDS  --------------------------------- */
 
 
 /* ---------------------------------CONTACT ME PAGE STARTS------------------------------ */
@@ -506,249 +713,6 @@ figure.about-me-pic {
         padding-left: 0.3em;
     }
 
-
-
-/* ---------------------------------CONTACT ME PAGE ENDS------------------------------ */
-
-
-
-
-
-
-
-
-/* ---------------------- MEDIA QUERY MOBILE (INDEX) STARTS  --------------------------------- */
-@media screen and (max-width: 767px) {
-    body {
-        flex-direction: column;
-    }
-
-    nav {
-        width: 100vw;
-        height: auto;
-        background-color: rgb(8, 1, 37);
-        border-right: none;
-        border-bottom: 1px solid rgb(133, 14, 212);
-        align-items: center;
-    }
-
-    figure {
-        height: 7em;
-        width: 7em;
-        border: 3px solid rgb(43, 47, 65);
-    }
-
-    figcaption {
-        font-size: 2rem;
-        margin-top: 0.2rem;
-    }
-
-
-    .social-links {
-        position: relative;
-        justify-content: center;
-    }
-
-    nav section i {
-        font-size: 1.7rem;
-        padding: 2em 0.5em 0em;
-
-    }
-
-
-    aside {
-        height: 35vh;
-        margin-top: 1em;
-        padding-top: 1em;
-        display: flex;
-        justify-content: center;
-    }
-
-    aside ul {
-        margin-bottom: 0;
-    }
-
-
-    aside a {
-        font-size: 1.2rem;
-    }
-
-    aside a i {
-        font-size: 1rem;
-        margin-top: 0em;
-        padding-right: 1em;
-        padding-bottom: 1.9em;
-    }
-
-    main {
-        background-position: end;
-    }
-
-    h2 {
-        font-size: 1.2rem;
-        font-weight: 400;
-        text-align: start;
-        width: 100%;
-    }
-
-    h1 {
-        color: white;
-        margin-top: 1em;
-        width: 100%;
-    }
-
-    p {
-        margin-top: -0.7em;
-        font-size: 1.25em;
-        width: 70%;
-        color: rgb(255, 255, 255);
-        margin-bottom: 0.7em;
-    }
-
-    .main-content {
-        border: 3px solid rgb(0, 1, 19);
-        background: linear-gradient(0.25turn, rgba(8, 1, 37, 0.993), rgba(10, 3, 43, 0.979), rgba(8, 1, 37, 0.836));
-        margin-top: 2em;
-        margin-left: 2em;
-        width:80%;
-        border-radius: 3px;
-        border-right-style: none;
-    }
-
-    a.learn-more {
-        width: 100%;
-        padding: 0.7rem 0.5rem;
-        font-size: 1rem;
-        box-shadow: inset 0 0 0 0 rgb(133, 14, 212);
-        transition: ease-in-out 1s;
-        margin-top: 2em;
-    }
-
-    .learn-more:hover {
-        box-shadow: inset 80vw 0 0 0 rgb(46, 5, 73);
-    }
-}
-/* ------------------------------------ MEDIA QUERY MOBILE (INDEX) ENDS--------------------------------- */
-
-
-/* -------------------------- MEDIA QUERY TABLET (INDEX) STARTS ----------------------- */
-
-@media screen and (min-width: 768px) and (max-width: 1023px){
-    body {
-        height: 100%;
-    }
-    nav {
-        height: 100vh;
-    }
-
-    main {
-        height: 100vh;
-    }
-
-    .main-content {
-        border: 3px solid rgb(0, 1, 19);
-        background: linear-gradient(0.25turn, rgba(8, 1, 37, 0.993), rgba(10, 3, 43, 0.979), rgba(8, 1, 37, 0.836));
-        margin-top: 6em;
-        margin-left: 3em;
-        width:80%;
-        border-radius: 3px;
-        border-right-style: none;
-        height: auto;
-    }
-
-    a.learn-more {
-        width: 100%;
-        margin-top: 3em;
-    }
-
-    .learn-more:hover {
-        box-shadow: inset 60vw 0 0 0 rgb(46, 5, 73);
-    }
-}
-
-/* -------------------------- MEDIA QUERY TABLET (INDEX) ENDS ----------------------- */
-
-
-/* ------------------ MEDIA QUERY TABLET & DESKTOP (ABOUT ME) STARTS --------------------------- */
-@media screen and (min-width: 768px) {
-
-    body {
-        height: 100vh;
-        overflow: auto;
-
-    }
-
-    nav.nav-menu {
-        border-bottom-style: none;
-        width:auto;
-        overflow:auto;
-        /* position: relative; */
-    }
-
-    main.about-me-main {
-        overflow: auto;
-
-    }
-
-
-    .about-me-main {
-        height: auto;
-        background-color: white;
-    }
-
-    .about-me-text {
-        height: auto;
-    }
-
-    .about-me-text p {
-        font-size: 1.4rem;
-        padding: 1.5em 1em 0.2em 1em;
-        color: rgb(255, 255, 255);
-        line-height: 1.7em;
-    }
-
-}
-
-@media screen and (min-width: 1024px) {
-
-    body {
-        height: 100vh;
-    }
-
-    .about-me-content {
-        display:flex;
-        flex-direction: row;
-        width: auto;
-        align-items: center;
-        height:auto;
-    }
-
-    .pic-container {
-        width: 40%;
-        /* height: auto; */
-        border: 1px solid white;
-        margin: 0em 2em 0em 2em;
-    }
-
-    figure.about-me-pic {
-        height:80vh;
-        width: 100%;
-        background-size: cover;
-    }
-
-    .about-me-text {
-        display: flex;
-        flex-direction: column;
-        margin:0;
-        width: 100%;
-    }
-
-}
-
-/* ------------------ MEDIA QUERY TABLET (ABOUT ME) ENDS --------------------------- */
-
-
-/*---------------- MEDIA QUERY TABLET & DESKTOP (CONTACT ME) STARTS -------------------- */
 @media screen and (min-width: 768px) {
 
     
@@ -759,6 +723,7 @@ figure.about-me-pic {
 
     .contact-me-content {
         max-width: 70%;
+        margin-left: 16em;
     }
 
     .contact-me-phrase {
@@ -838,5 +803,166 @@ figure.about-me-pic {
 
 }
 
-/*---------------- MEDIA QUERY TABLET & DESKTOP (CONTACT ME) ENDS -------------------- */
+/* ---------------------------------CONTACT ME PAGE ENDS------------------------------ */
+
+
+/* ------------------------------------- RESUME PAGE STARTS --------------------------------------------------------------------*/
+
+.resume-main {
+    display:flex;
+    flex-direction: column;
+    /* min-height: 100%; */
+    height: auto;
+    /* background-color:rgb(8, 1, 37); */
+}
+
+
+.resume-top-text {
+    /* border: 1px solid red; */
+    color:white;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2em;
+    text-align: center;
+    max-width: 80%;
+    font-size: 1.4rem;
+}
+
+.resume-container {
+    display: flex;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    margin-top: 2em;
+    border-top: 2px solid white;
+    background:transparent;
+    background-image: url(/images/background2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.timeline {
+    border: 2px solid rgb(255, 255, 255);
+    margin-right: 2em;
+    margin-left: 1.5em;
+    min-height: 100vh;
+    /* position: relative; */
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* max-width: 80%; */
+}
+
+.timeline-item {
+    background-color: rgb(62, 11, 82);
+    border-radius: 5px;
+    height: auto;
+    margin-top: 2em;
+    margin-bottom: 0.3em;
+    color:rgb(255, 255, 255);
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    max-width: 95%;
+}
+
+
+.timeline-item::before {
+    content:'';
+    width: 0em;
+    height: 0em; 
+    border-radius: 50%;
+    background-color:rgb(73, 5, 90) ;
+    border:5px solid ;
+    position: absolute;
+    margin-left: -3.15em;
+    padding: .7em;
+    margin-top: -1.1em;
+}
+
+.timeline-header {
+    display:flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-size: 1.5rem;
+    background-color: rgb(241, 236, 236);
+    border-top-right-radius: 29px;
+    max-height: 20%;
+    color:rgb(72, 9, 80);
+    width: 100%;
+    padding-top: 0.5em;
+    padding-left: 0.2em;
+    padding-bottom: 0.5em;
+    position: relative;
+    padding: 0;
+}
+
+.timeline-header i {
+    padding: 0.5em 0em 0.5em 0.2em;
+}
+
+.timeline-header p {
+    width: 75%;
+    margin: 0;
+    letter-spacing: 0.1em;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(72, 9, 80);
+}
+
+.timeline-item h2 {
+    margin:0;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    text-align: start;
+}
+
+p.graduation-text {
+    margin:0;
+    padding: 1em 1.3em 1.6em 1.3em;
+    line-height: 1.3;
+    font-weight: 100;
+    color:rgb(219, 210, 210);
+    width: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    .resume-main {
+        margin-left: 13em;
+        /* height:100%; */
+    }
+
+    .content-container {
+        width: 100%;
+    }
+
+    .timeline-item h2 {
+        font-size: 1.7rem;
+        padding-top: 0.8em;
+        padding-left: 1em;
+    }
+
+    .nav-menu {
+        position: fixed;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .content-container {
+        max-width: 60%;
+    }
+}
+
+
+/* --------------------------------------------------------------- RESUME PAGE ENDS HERE ------------------------------------------------------------*/
+
+
 
