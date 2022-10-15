@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/05612dc1aa.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav class="nav-menu">
+        <h1 class="about-h1-logo">Nawras Altai</h1>
+        <ul>
+            <li ><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+        
+            <li class="nav-aboutme"><a href="about.html"><i class="fa-solid fa-user"></i>About Me</a></li>
+        
+            <li class="active"><a href="portfolio.html"><i class="fa-solid fa-briefcase"></i>Portfolio</a></li>
+        
+            <li class="nav-resume"><a href="resume.html"><i class="fa-solid fa-file"></i>Resume</a></li>
+        
+            <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+        </ul>
+        <footer class="social-links">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </footer>
+    </nav>
+    <main class="portfolio-main">
+        <header>
+        <h1>Projects</h1>
+        <img class="main-app-page" src="/images/app1.JPG" alt="">
+        <h3>Background:</h3>
+        <p class="project-background-text">
+        The project below is my first and only IT-project (outside this portfolio page), the project itself was the last part of the DevOps Engineering program.
+        The main concept was to create some sort of application that uses a database to store its data.       
+        </p>
+        <h3>Idea:</h3>
+        <p class="project-idea-text">
+            I chose to create an application with a graphical user interface for a car parking monitor. The app is built with Python, Tkinter and CustomTkinter. For the database I chose to work with SQLite.
+            Total amount of parking spaces for this specific parking lot is 50 spots where each registration number can't be duplicated for one single parking session. 
+            The price is free of charge for the first 60 minutes, thereafter the price is set to 0.25 SEK/minute.
+            The application has three main funtions: <ol>
+                <li>Start parking</li>
+                <li>View parked car status</li>
+                <li>Stop parking</li>
+            </ol>
+        </p>
+    </header>
+    <div class="portfolio-content">
+        <h2>Main functions</h2>
+            <article class="start">
+                
+                <p class="start-function-text">
+                    <em> The Start function:</em> <br> After clicking on start parking on the main menu the client gets to the page demonstrated on the first picture below.
+                    Here the client gets asked to enter a registration number consisting of 6 characters.
+                    If the registration number is already entered in the database the client will get an error and will be asked to enter another number.
+                    If the number is formated correct and is unique, the parking session will be successfully started, shown on the second picture.
+                </p>
+                <img class="start-pic" src="images/app2.JPG" alt="">
+                <img class="start-pic" src="/images/app3.JPG" alt="">
+            </article>
+
+            <article class="status">
+                2
+            </article>
+
+            <article class="stop">
+                3
+            </article>
+    </div>
+    </main>
+</body>
+</html>
