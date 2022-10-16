@@ -435,7 +435,7 @@ figure.about-me-pic {
     height: 20vh;
     width: 100%;
     margin: 0;
-    background-image: url(/images/profile-pic.jpg);
+    background-image: url("./images/profile-pic.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
