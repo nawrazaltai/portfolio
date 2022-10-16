@@ -12,11 +12,9 @@ html {
 body {
     background-color: rgb(8, 1, 37);
     margin: 0;
-    /* font-family: Josefin Sans, sans-serif; */
     font-family: League Spartan, sans-serif;
     display:flex;
     height: 100%;
-    /* width: 80vw; */
 }
 
 /* ------------------------------------ INDEX PAGE START --------------------------------- */
@@ -335,7 +333,6 @@ p {
 .about-me-main {
     display: flex;
     flex-direction: column;
-    /* height: auto; */
     background-color: white;
     align-items: center;
 }
@@ -362,7 +359,6 @@ nav.nav-menu {
     height: 100%;
     width: auto;
     border-bottom: 1px solid rgb(133, 14, 212);
-    /* overflow: auto; */
 }
 
 nav .nav-menu ul {
@@ -450,7 +446,6 @@ figure.about-me-pic {
     background-color: rgb(0, 1, 19);
     border: 2px solid rgb(255, 255, 255);
     width: 100%;
-    /* height: auto; */
     margin: 0em 2em 1em 2em;
 }
 
@@ -483,8 +478,6 @@ figure.about-me-pic {
     nav.nav-menu {
         border-bottom-style: none;
         width:auto;
-        /* overflow:auto; */
-        /* position: relative; */
     }
 
     .nav-resume a i{
@@ -501,7 +494,6 @@ figure.about-me-pic {
         overflow: auto;
 
     }
-
 
     .about-me-main {
         height: auto;
@@ -542,7 +534,6 @@ figure.about-me-pic {
 
     .pic-container {
         width: 40%;
-        /* height: auto; */
         border: 1px solid white;
         margin: 0em 2em 0em 2em;
     }
@@ -574,7 +565,6 @@ figure.about-me-pic {
     .contact-me-content {
         border: 1px solid white;
         margin: 2em 1em 2em 1em;
-        /* background: linear-gradient(45deg, black 50%, rgb(6, 3, 41) 50%); */
         background-color: rgb(8, 1, 37);
         display: flex;
         flex-direction: column;
@@ -614,7 +604,6 @@ figure.about-me-pic {
     }
 
     .upper-card {
-        /* border: 1px dashed red; */
         width: 100%;
         padding-bottom: 1em;
         display:flex;
@@ -809,21 +798,17 @@ figure.about-me-pic {
 .resume-main {
     display:flex;
     flex-direction: column;
-    /* min-height: 100%; */
     height: auto;
-    /* background-color:rgb(8, 1, 37); */
 }
 
-
 .resume-top-text {
-    /* border: 1px solid red; */
     color:white;
     display: flex;
     margin: 0 auto;
     margin-top: 2em;
     text-align: center;
     max-width: 80%;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 
 .resume-container {
@@ -844,14 +829,12 @@ figure.about-me-pic {
     margin-right: 2em;
     margin-left: 1.5em;
     min-height: 100vh;
-    /* position: relative; */
 }
 
 .content-container {
     display: flex;
     flex-direction: column;
     height: 100%;
-    /* max-width: 80%; */
 }
 
 .timeline-item {
@@ -884,7 +867,6 @@ figure.about-me-pic {
 .timeline-header {
     display:flex;
     align-items: center;
-    /* justify-content: center; */
     font-size: 1.5rem;
     background-color: rgb(241, 236, 236);
     border-top-right-radius: 29px;
@@ -966,13 +948,11 @@ p.graduation-text {
 }
 
 .box {
-    /* width: 90%; */
     width: 80%;
     max-height: auto;
     margin: 0 auto;
     margin-top: 1em;
     margin-bottom: 2em;
-    /* background: rgba(255,255,255,0.2); */
     background-color: #ffffffea;
     padding: 0em 0em 1.2em 0em;
     border-top-right-radius: 4px;
@@ -1013,7 +993,6 @@ p.graduation-text {
     padding-left: 0.5em;
     padding-right: 0.5em;
     width: auto;
-    /* height: 100%; */
     color:black;
   }
 
@@ -1060,7 +1039,6 @@ p.graduation-text {
     position: relative;
     transition: all 5s ease-in-out;
     color:black;
-    /* overflow: overlay; */
   }
   
   .popup h2 {
@@ -1080,7 +1058,6 @@ p.graduation-text {
         margin-bottom: 0.1em;
         margin-top: 0.4em;
         width: 100%;
-        /* letter-spacing: 0.1em; */
         line-height: 1.6;
         color:black;
     }
@@ -1139,7 +1116,6 @@ p.graduation-text {
 
     .box {
         max-width: 60%;
-        /* max-height: auto; */
         margin: 0 auto;
         margin-top: 1em;
       }
@@ -1162,3 +1138,5 @@ p.graduation-text {
     
     }
 }
+
+/* ----------------------------- PORTFOLIO PAGE ENDS HERE --------------------------- */
