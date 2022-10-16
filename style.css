@@ -34,7 +34,7 @@ figure {
     width: 10em;
     border: 10px solid rgb(43, 47, 65);
     border-radius: 50%;
-    background-image: url("images/profile-pic.JPG");
+    background-image: url("images/profile-pic.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -110,7 +110,7 @@ a:hover {
 }
 
 main {
-    background-image: url("images/background2.JPG");
+    background-image: url("images/background2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: end;
