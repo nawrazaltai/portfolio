@@ -28,48 +28,65 @@
         </footer>
     </nav>
     <main class="portfolio-main">
-        <header>
-        <h1>Projects</h1>
-        <img class="main-app-page" src="/images/app1.JPG" alt="">
-        <h3>Background:</h3>
-        <p class="project-background-text">
-        The project below is my first and only IT-project (outside this portfolio page), the project itself was the last part of the DevOps Engineering program.
-        The main concept was to create some sort of application that uses a database to store its data.       
-        </p>
-        <h3>Idea:</h3>
-        <p class="project-idea-text">
-            I chose to create an application with a graphical user interface for a car parking monitor. The app is built with Python, Tkinter and CustomTkinter. For the database I chose to work with SQLite.
-            Total amount of parking spaces for this specific parking lot is 50 spots where each registration number can't be duplicated for one single parking session. 
-            The price is free of charge for the first 60 minutes, thereafter the price is set to 0.25 SEK/minute.
-            The application has three main funtions: <ol>
-                <li>Start parking</li>
-                <li>View parked car status</li>
-                <li>Stop parking</li>
-            </ol>
-        </p>
-    </header>
-    <div class="portfolio-content">
-        <h2>Main functions</h2>
-            <article class="start">
-                
-                <p class="start-function-text">
-                    <em> The Start function:</em> <br> After clicking on start parking on the main menu the client gets to the page demonstrated on the first picture below.
-                    Here the client gets asked to enter a registration number consisting of 6 characters.
-                    If the registration number is already entered in the database the client will get an error and will be asked to enter another number.
-                    If the number is formated correct and is unique, the parking session will be successfully started, shown on the second picture.
-                </p>
-                <img class="start-pic" src="images/app2.JPG" alt="">
-                <img class="start-pic" src="/images/app3.JPG" alt="">
-            </article>
+        <div class="portfolio-header">
+            <h1>Projects</h1>
+        </div>
+    
+    <div class="box">
+        <img src="/images/newgreylogo.png" alt="">
+    <h2>Car parking application</h2>
+    <p>This project was the last part of the DevOps Engineering program.
+        The main concept was to create some sort of application that uses a database to store its data.
+        I chose to create an application with a graphical user interface for a car parking monitor. The app is built with Python, Tkinter and CustomTkinter. For the database I chose to work with SQLite.
+    Total amount of parking spaces for this specific parking lot is 50 spots where each registration number can't be duplicated for one single parking session. 
+    The price is free of charge for the first 60 minutes, thereafter the price is set to 0.25 SEK/minute.
+    The application has three main funtions: Start parking, See parked car status and Stop parking. 
+    <em><br> The project is not complete.*</em>
+    </p>
+    <a class="button" href="#popup1">See main functions</a>
+</div>
 
-            <article class="status">
-                2
-            </article>
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Car parking application main functions</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+            <h3>Main menu</h3>
+            <p>The main menu gives the client three options: Start parking, See Parked Car Status and Stop parking.
+                Apart from the functions there's a price list displayed along with time, date and availabe parking spots.
+            </p>
+            <img src="/images/app1.png" alt="">
+            
 
-            <article class="stop">
-                3
-            </article>
-    </div>
-    </main>
+            <h3>Start Parking </h3>
+            <p>After clicking on start parking on the main menu the client gets to the page demonstrated on the first picture below.
+                Here the client gets asked to enter a registration number consisting of 6 characters.
+                If the registration number is already entered in the database the client will get an error and will be asked to enter another number.
+                If the number is formated correct and is unique, the parking session will be successfully started, shown on the second picture.</p>
+            <img src="/images/app2.JPG" alt="">
+            <img src="/images/app3.JPG" alt="">
+
+            <h3>Parked car Status</h3>
+            <p>This function displays a summary for each unique registration number.
+                The summary includes Start date and time, Parking status, Total parking time and Current price.
+            </p>
+            <img src="/images/app5.JPG" alt="">
+
+            <h3>Stop parking</h3>
+            <p>The Stop parking function stops the parking timer for the entered registration number and gives a summary over the parking session, shown on the first picture.
+                When the parking is stopped the client continues to a ''payment'' prompt, seen on the second picture. <br>
+                <em>This function is not finished *</em> 
+            </p>
+            <img src="/images/app6.JPG" alt="">
+            <img src="/images/app7.JPG" alt="">
+        </div>
+	</div>
+</div>
+</main>
+
+
+
+
+
 </body>
 </html>
