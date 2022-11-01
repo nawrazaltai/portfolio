@@ -43,12 +43,13 @@ figure {
     background-size: cover;
 }
 
-figcaption {
+.figcaption {
     color:white;
     text-align: center;
     font-size: 1.8rem;
     margin-top: 0.2rem;
     font-weight: 600;
+    margin-bottom: 0em;
 }
 
 aside {
@@ -165,7 +166,7 @@ p {
 
 
 .learn-more:hover {
-    box-shadow: inset 15vw 0 0 0 rgb(46, 5, 73);
+    box-shadow: inset 25vw 0 0 0 rgb(46, 5, 73);
     color: rgb(255, 255, 255);
 }
 
