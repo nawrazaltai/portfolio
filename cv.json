@@ -1,0 +1,27 @@
+{ 
+    "experience": [
+        {
+            "time": "2013",
+            "title": "Highschool graduation",
+            "text": "I graduated from Nyköpings gymnasium with a degree in Computer Science."
+        },
+
+        {
+            "time": "2015 - ",
+            "title": "My first job",
+            "text": "I landed my first job as a mentor at the same high school I graduated from (Nyköpings gymnasium). This is still my current workplace. Some of my main tasks are creating individual study plans and schedules, leading weekly meatings with teachers and principal, also documentation and compiling numbers for our program."
+        },
+
+        {
+            "time": "2021 - 2022",
+            "title": "Devops Engineer",
+            "text": "In August '21 I began studying DevOps engineering at Chas Academy in Stockholm. Throughout the year the main focus was learning Python, Bash, Database management, CI/CD and Agile development."
+        },
+
+        {
+            "time": "2022 -",
+            "title": "Frontend development",
+            "text": "In summer '22 I changed from DevOps to Frontend development, still at Chas Academy. So far the main focus has been learning HTML, CSS and Javascript."
+        }
+    ]
+}
