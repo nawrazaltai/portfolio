@@ -2,7 +2,7 @@ const resumeContentContainer = document.querySelector('div.content-container');
 
 
 async function getCvData() {
-    let response = await fetch("/cv.json");
+    let response = await fetch("./cv.json");
 
     if (response.ok) { // if HTTP-status is 200-299
 
