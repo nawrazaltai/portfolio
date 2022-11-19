@@ -972,13 +972,23 @@ p.graduation-text {
     border: 2px solid rgb(253, 253, 253);
     width: 22%;
     height: 100%;
-    /* background-color: #481868; */
     background: linear-gradient(rgb(47, 2, 68), rgb(71, 10, 71));
     border-radius: 5px;
     position: relative;
     align-items: center;
-    /* margin: 0 auto; */
-    /* margin-top: 1em; */
+  }
+
+  .card-item a{
+    padding: .65em;
+    background-color: rgb(230, 233, 238);
+    color: rgb(71, 10, 71);
+    text-decoration: none;
+    border: 1px solid rgb(228, 30, 235);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: .3em;
   }
 
   .card-item p {
@@ -991,18 +1001,17 @@ p.graduation-text {
     width:100%;
     height: 30%;
     opacity: .8;
-    border-bottom: 4px solid rgb(133, 14, 212);;
+    border-bottom: 4px solid rgb(133, 14, 212);
   }
 
   .rps {
     background-image: url(images/rps.png);
-    /* background-position: center; */
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   .park {
-    background-image: url(https://i.pinimg.com/736x/e6/be/eb/e6beeb21764c930dc9270e082964f854.jpg);
+    background-image: url(images/parking.jfif);
     background-position: 100% 4%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1028,35 +1037,17 @@ p.graduation-text {
     /* padding: 2em; */
   }
 
-  .item-buttons-container a {
-    color: rgb(71, 10, 71);
-    text-decoration: none;
-  }
-
   .item-buttons-container a:visited {
-    color: inherit;
+    color: rgb(71, 10, 71);
+    transition: 0s;
   } 
 
-  .top-items button{
-    /* height: 40%; */
-    width: 100%;
-    margin: 0 auto;
-    background-color: rgb(222, 227, 238);
-    border-radius: 5px;
-    border:none;
-    color:rgb(72, 9, 80);
-    font-size: 1rem;
-    font-weight: 600;
-    padding: .8em;
-    margin-bottom: 0.3em;
-  }
-
-  .top-items button:hover{
+.top-items a:hover{
     color: white;
-    /* background-color:#481868; */
     background: rgb(71, 10, 71);
     border:1px solid white;
-}
+    transition: .3s;
+} 
 
 .fa-arrow-up-right-from-square {
     font-size: 1.1rem;
@@ -1064,15 +1055,11 @@ p.graduation-text {
     color: rgb(71, 10, 71);
 }
 
-.top-items button:hover a {
-    color:white;
-}
-
-.top-items button:hover .fa-arrow-up-right-from-square {
+.top-items a:hover .fa-arrow-up-right-from-square {
     color: white;
 }
 
-.item-modal, .item1 {
+.item-modal{
     display: none;
     position: fixed;
     z-index: 1;
