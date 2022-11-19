@@ -952,8 +952,8 @@ p.graduation-text {
     flex-direction: column;
 }
 
-.box {
-    width: 80%;
+/* .box {
+    width: 10vw;
     max-height: auto;
     margin: 0 auto;
     margin-top: 1em;
@@ -967,21 +967,192 @@ p.graduation-text {
     background-clip: padding-box;
     text-align: center;
   }
+*/
 
   .portfolio-header {
     margin: 0 auto;
   }
 
-  .portfolio-header h1 {
-    border-bottom: 1px solid white;
+  .top-items{
+    display:flex;
+    /* border: 2px solid red; */
+    width: 90%;
+    height: 44%;
+    margin: 0 auto;
+    margin-top: 2em;
   }
 
-  .box img {
-    max-width: 100%;
+  .card-item {
+    display:flex;
+    flex-direction: column;
+    border: 2px solid rgb(253, 253, 253);
+    width: 22%;
+    height: 100%;
+    /* background-color: #481868; */
+    background: linear-gradient(rgb(47, 2, 68), rgb(71, 10, 71));
+    border-radius: 5px;
+    position: relative;
+    align-items: center;
+    /* margin: 0 auto; */
+    /* margin-top: 1em; */
+  }
+
+  .item-pic {
+    background-image: url(images/wp.png);
+    background-position: 10% 63%;
+    width:100%;
+    height: 30%;
+    opacity: .8;
+    border-bottom: 4px solid rgb(133, 14, 212);;
+  }
+
+  .item-name {
+    margin-top: 0.8em;
+    font-weight: 500;
+    font-size: 1.9rem;
+    text-align: center;
+  }
+
+  .item-buttons-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 5em;
+    /* border: 2px solid white; */
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 1em;
+    justify-content: space-around;
+    /* padding: 2em; */
+  }
+
+  .item-buttons-container a {
+    text-decoration: none;
+  }
+
+  .item-buttons-container a:visited {
+    color: inherit;
+  } 
+
+  .top-items button{
+    /* height: 40%; */
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(222, 227, 238);
+    border-radius: 5px;
+    border:none;
+    color:rgb(72, 9, 80);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .8em;
+    margin-bottom: 0.3em;
+  }
+
+  .top-items button:hover{
+    color: white;
+    /* background-color:#481868; */
+    background: rgb(71, 10, 71);
+    border:1px solid white;
+}
+
+.fa-arrow-up-right-from-square {
+    font-size: 1.1rem;
+    margin-left: .2em;
+    color: rgb(71, 10, 71);
+}
+
+.top-items button:hover a {
+    color:white;
+}
+
+.top-items button:hover .fa-arrow-up-right-from-square {
+    color: white;
+}
+
+.item-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0, .5);
+}
+
+.modal-content {
+    background-color: rgb(247, 243, 243);
+    color: black;
+    margin: 4% auto;
+    /* padding: 2em; */
+    width: 70%;
+    animation-name: openmodal;
+    animation-duration: 2s;
+}
+
+.modal-header {
+    background-color: rgb(133, 14, 212);
+    padding: 2em;
+}
+
+
+.modal-header h2 {
+    margin:0;
+    color: white;
+}
+
+.modal-body {
+    margin-left: 1em;
+}
+
+.modal-body p{
+    font-size: 1.2rem;
+    margin-top: 0em;
+    color: black;
+}
+
+.modal-body h2 {
+    margin-bottom: 0.2em;
+    text-decoration: underline;
+}
+
+.modal-body ul li {
+    font-size: 1.3rem;
+    padding-bottom: 1em;
+    padding-right: 1em;
+}
+
+.closeBtn {
+    color: rgb(255, 255, 255);
+    float: right;
+    font-size: 2rem;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes openmodal {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+
+
+  /* .portfolio-header h1 {
+    border-bottom: 1px solid white; 
+} */
+
+  /* .box img {
+    width: 5vw;
     border-top-left-radius: 5px;
-  }
+  } */
 
-  .box h2 {
+  /* .box h2 {
     margin-top: 0.5em;
     margin-bottom: 1em;
     color:rgb(0, 0, 0);
@@ -999,9 +1170,9 @@ p.graduation-text {
     padding-right: 0.5em;
     width: auto;
     color:black;
-  }
+  } */
 
-
+/* 
   .button {
     font-size: 1.1rem;
     padding: 12px;
@@ -1053,9 +1224,9 @@ p.graduation-text {
     padding-right:1em;
     margin-right:1em;
 
-}
+} */
 
-    .popup h3 {
+    /* .popup h3 {
         margin-bottom: 0em;
     }
 
@@ -1076,9 +1247,9 @@ p.graduation-text {
     .popup ol li {
         font-weight: 600;
         margin-bottom: 0.2em;
-    }
+    } */
 
-  .popup .close {
+  /* .popup .close {
     position: absolute;
     top: 20px;
     right: 30px;
@@ -1105,7 +1276,7 @@ p.graduation-text {
     height:auto;
     border: 2px solid black;
     margin-top: 0.4em;
-  }
+  } */
 
   
   @media screen and (min-width: 768px){

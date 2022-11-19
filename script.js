@@ -28,74 +28,33 @@ async function getCvData() {
         experienceHtml += expListItem;
         resumeContentContainer.innerHTML = experienceHtml;
         });
-
-        // let employmentHtml = ``;
-        // cvData.employment.forEach(element => {
-        //     const employmentListItem = `
-        //     <div class="timeline-item">
-        //             <div class="timeline-header">
-        //                 <i class="fa-solid fa-briefcase"></i>
-        //                 <p>${element.time}</p>  
-        //             </div>
-        //             <h2>${element.title}</h2>
-        //             <p class="graduation-text">
-        //             ${element.jobDescription} 
-        //             </p>
-        //         </div>`
-        //     employmentHtml += employmentListItem;
-        //     resumeContentContainer.innerHTML += employmentHtml;
-        // });
-
-
-        // let educationHtml = ``;
-        // cvData.experience.forEach(element => {
-        //     console.log(element.time);
-        //     console.log(element.title);
-        //     console.log(element.text);
-        //     console.log('-------------------');
-        // });
-
-        // let res = cvData.employment.concat(cvData.education);
-        // console.log(res);
-
-
-        // cvData.employment.forEach(el => {
-        //     console.log(el.time);
-        //     console.log(el.title);
-        //     console.log(el.jobDescription);
-        //     });
-            
-
-                
-
-        // cvData.employment.forEach(el => {
-        //             console.log(el.time);
-        //             console.log(el.title);
-        //             console.log(el.jobDescription)});
-
-
-        // cvData.employment.concat(cvData.education).forEach(function(item){
-        //     console.log(item)
-        // });
-                // console.log(element.time);
-                // console.log(element.title);
-                // console.log(element.jobDescription);
-            // });
-            // console.log(cvData.employment[0]['time']);
-            // console.log(cvData.employment.title);
-            // console.log(cvData.employment.jobDescription);
-                    
-
-            // cvData.employment.forEach(element => {            
-            //     console.log(element.time);
-            //     console.log(element.title);
-            //     console.log(element.jobDescription);
-            // });
-            // });
-
     } else {
       console.log("HTTP-Error: " + response.status);
     }
   }
 
   getCvData();
+
+
+let modal = document.querySelector('.item-modal');
+const openModalBtn = document.querySelector('.readMoreBtn');
+let closeBtn = document.querySelector('.closeBtn');
+
+
+openModalBtn.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal);
+window.addEventListener('click', clickOutsideModal);
+
+function openModal() {
+    modal.style.display = 'block';
+};
+
+function closeModal () {
+    modal.style.display = 'none';
+}
+
+function clickOutsideModal(e){
+    if(e.target == modal){
+        modal.style.display = 'none';
+    }
+}
