@@ -36,25 +36,40 @@ async function getCvData() {
   getCvData();
 
 
-let modal = document.querySelector('.item-modal');
-const openModalBtn = document.querySelector('.readMoreBtn');
-let closeBtn = document.querySelector('.closeBtn');
+// Get the button that opens the modal
+let openModalBtn = document.querySelectorAll(".readMoreBtn");
 
+// All page modals
+let modals = document.querySelectorAll('.item-modal');
 
-openModalBtn.addEventListener('click', openModal);
-closeBtn.addEventListener('click', closeModal);
-window.addEventListener('click', clickOutsideModal);
+// Get the <span> element that closes the modal
+let closeBtn = document.getElementsByClassName("closeBtn");
 
-function openModal() {
-    modal.style.display = 'block';
-};
-
-function closeModal () {
-    modal.style.display = 'none';
+// When the user clicks the button, open the modal
+for (var i = 0; i < openModalBtn.length; i++) {
+ openModalBtn[i].onclick = function(e) {
+    e.preventDefault();
+    let modal = document.querySelector(e.target.getAttribute("href"));
+    // console.log(modals)
+    modal.style.display = "block";
+ }
 }
 
-function clickOutsideModal(e){
-    if(e.target == modal){
-        modal.style.display = 'none';
+// When the user clicks on <span> (x), close the modal
+for (let i = 0; i < closeBtn.length; i++) {
+ closeBtn[i].onclick = function() {
+    for (let index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+    }
+ }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target.classList.contains('item-modal')) {
+     for (let index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+     }
     }
 }
+

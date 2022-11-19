@@ -952,23 +952,6 @@ p.graduation-text {
     flex-direction: column;
 }
 
-/* .box {
-    width: 10vw;
-    max-height: auto;
-    margin: 0 auto;
-    margin-top: 1em;
-    margin-bottom: 2em;
-    background-color: #ffffffea;
-    padding: 0em 0em 1.2em 0em;
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    background-clip: padding-box;
-    text-align: center;
-  }
-*/
-
   .portfolio-header {
     margin: 0 auto;
   }
@@ -980,6 +963,7 @@ p.graduation-text {
     height: 44%;
     margin: 0 auto;
     margin-top: 2em;
+    justify-content: space-evenly;
   }
 
   .card-item {
@@ -997,6 +981,10 @@ p.graduation-text {
     /* margin-top: 1em; */
   }
 
+  .card-item p {
+    font-size: 1rem;
+  }
+
   .item-pic {
     background-image: url(images/wp.png);
     background-position: 10% 63%;
@@ -1005,6 +993,20 @@ p.graduation-text {
     opacity: .8;
     border-bottom: 4px solid rgb(133, 14, 212);;
   }
+
+  .rps {
+    background-image: url(images/rps.png);
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .park {
+    background-image: url(https://i.pinimg.com/736x/e6/be/eb/e6beeb21764c930dc9270e082964f854.jpg);
+    background-position: 100% 4%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
   .item-name {
     margin-top: 0.8em;
@@ -1027,6 +1029,7 @@ p.graduation-text {
   }
 
   .item-buttons-container a {
+    color: rgb(71, 10, 71);
     text-decoration: none;
   }
 
@@ -1069,7 +1072,7 @@ p.graduation-text {
     color: white;
 }
 
-.item-modal {
+.item-modal, .item1 {
     display: none;
     position: fixed;
     z-index: 1;
