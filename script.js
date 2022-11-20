@@ -8,13 +8,8 @@ async function getCvData() {
 
     // get the response body (the method explained below)
         let cvData = await response.json();
-        // cvData.employment.forEach(element => {
-            // console.log(element.time)
-            // console.log(element.title)
-            // console.log(element.jobDescription);
-            // console.log('-------------------')});
 
-        let experienceHtml = ``;
+        let experienceHtml = "";
         cvData.experience.forEach(element => {            
             const expListItem = `
             <div class="timeline-item">
